@@ -19,9 +19,9 @@ public class DemoApplication {
 
 		String Filename = "SamplePdf";
 
-		signer.setPdfToSign("C://Users//danie//Documents//ServerKey//demo//src//main//java//com//example//resources//SamplePdf.pdf");
+		signer.setPdfToSign("src//main//java//com//example//resources//SamplePdf.pdf");
 
-		signer.setPkcs12("C://Users//danie//Documents//ServerKey//demo//src//main//java//com//example//resources//Wayne Enterprises, Inc.pfx");
+        signer.setPkcs12("src//main//java//com//example//resources//Wayne Enterprises, Inc.pfx");
 		signer.setCertPassword("1234");
 
 		signer.setVisualRepresentation(PadesVisualElements.getVisualRepresentation());
