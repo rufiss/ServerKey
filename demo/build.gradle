@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.5'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.lacunasoftware.pkiexpress:pki-express:1.19.0'
+	implementation 'com.azure:azure-security-keyvault-secrets:4.2.3'
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
